@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MoviesAssignment2.props" />
+</Project>

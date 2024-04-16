@@ -1,0 +1,81 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Welcome to Movies Hub";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa; /* background color */
+        font-family: Arial, sans-serif; /* font family */
+    }
+
+    .jumbotron {
+        background: linear-gradient(45deg, #000000, #333333); /* Black gradient finish for jumbotron */
+        color: white; /* Text color */
+        padding: 2rem; /* Padding */
+        margin-bottom: 2rem; /* Margin bottom */
+    }
+
+    .lead {
+        font-size: 1.25rem; /* Font size for lead */
+        margin-bottom: 1rem; /* Margin bottom */
+    }
+
+    .feature-card {
+        border: 1px solid #dee2e6; /* Border */
+        border-radius: 5px; /* Border radius */
+        padding: 1.5rem; /* Padding */
+        margin-bottom: 1.5rem; /* Margin bottom */
+        background-color: white; /* Background color */
+    }
+
+        .feature-card h3 {
+            margin-bottom: 1rem; /* Margin bottom for heading */
+        }
+
+    .btn-primary {
+        background: linear-gradient(45deg, #2c3e50, #4d6271); /* Dark gradient finish for Learn More button */
+        border-color: transparent; /* Transparent border color */
+        color: white; /* Text color */
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #4d6271, #2c3e50); /* Dark gradient finish for Learn More button on hover */
+            color: white; /* Text color on hover */
+        }
+</style>
+
+<!-- Jumbotron section -->
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Movies Hub</h1>
+    <p class="lead">Discover incredible content and resources!</p>
+</div>
+
+<!-- Main content container -->
+<div class="container">
+    <div class="row">
+        <!-- Feature cards -->
+        <div class="col-md-4">
+            <div class="feature-card">
+                <h3>Extensive Movie Database</h3>
+                <p>Explore a diverse collection of movies covering various genres, directors, actors and many more things.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-card">
+                <h3>User-friendly Interface</h3>
+                <p>Enjoy an intuitive and easy-to-navigate interface, ensuring effortless searching and discovery of your favorite movies.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-card">
+                <h3>Personalized Recommendations</h3>
+                <p>Receive tailored movie recommendations based on your viewing preferences.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>

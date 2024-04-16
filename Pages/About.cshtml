@@ -1,0 +1,82 @@
+﻿
+@page
+@model MoviesAssignment2.Pages.AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+<!-- CSS styles for the page -->
+<style>
+    /* Set background color, text color, and font family for the body */
+    body {
+        background-color: #f0f0f0;
+        color: #333;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Styling for the container holding the about content */
+    .about-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling for the about heading */
+    .about-heading {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    /* Styling for the content paragraphs */
+    .about-content {
+        line-height: 1.6;
+    }
+
+    /* Styling for the team members section */
+    .team-members {
+        margin-top: 30px;
+    }
+
+    /* Styling for individual team members */
+    .team-member {
+        display: inline-block;
+        margin-right: 20px;
+        font-weight: bold;
+        color: #555;
+    }
+</style>
+
+<!-- HTML markup for the about section -->
+<div class="about-container">
+    <!-- Heading for the about section -->
+    <h1 class="about-heading">About Our Website</h1>
+    <!-- Content of the about section -->
+    <div class="about-content">
+        <!-- Introduction paragraph -->
+        <p>Welcome to our movie website! We are dedicated to providing you with the latest information about movies, including reviews, trailers, and upcoming releases.</p>
+        <!-- Overview paragraph -->
+        <p>Our website is designed to be your ultimate destination for all things related to movies. Here, you can explore a vast collection of films spanning various genres, from action-packed blockbusters to heartfelt dramas and everything in between.</p>
+        <!-- Features paragraph -->
+        <p>Discover incredible content and resources, including detailed synopses, cast and crew information, user ratings, and reviews. Whether you're searching for a new release or revisiting a classic, our website offers a seamless browsing experience to help you find exactly what you're looking for.</p>
+        <!-- Community paragraph -->
+        <p>Stay updated with the latest news and trends in the world of cinema, and join our community of passionate movie enthusiasts. Connect with fellow film lovers, share your thoughts and recommendations, and embark on an exciting cinematic journey with us.</p>
+        <!-- Team members section -->
+        <div class="team-members">
+            <!-- Heading for the team members section -->
+            <h2>Team Members</h2>
+            <!-- List of team members -->
+            <p>This website was created by:</p>
+            <!-- Individual team members -->
+            <span class="team-member">Kartik</span>
+            <span class="team-member">Sammen</span>
+            <span class="team-member">Vivek</span>
+        </div>
+    </div>
+</div>

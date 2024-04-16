@@ -1,0 +1,38 @@
+﻿[
+    {
+        "title": "Avengers:Endgame",
+        "director": "Anthony Russo, Joe Russo",
+        "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8uK1L5G7UwQfdiartTL4sg-QtDgo8wsUBnRZ6V9foaCBlTOd8NZQyexTr0xiPsZlpKKJkrCfTtRhTD8gcfHwxNGrKSgi2bqwaiKpolFVr3chDgkRtVKL_fNwHScrKfEiZhYlCO9_FEu_m/w1920-h1080-c/avengers-endgame-uhdpaper.com-8K-94.jpg",
+        "genre": "Science Fiction"
+    },
+    {
+        "title": "Spider Man:No Way Home",
+        "director": "Jon Watts",
+        "img": "https://images7.alphacoders.com/116/1163874.jpg",
+        "genre": "Science Fiction"
+    },
+    {
+        "title": "Oppenheimer",
+        "director": "Christopher Nolan",
+        "img": "https://images6.alphacoders.com/133/1335807.jpeg",
+        "genre": "Historical Drama"
+    },
+    {
+        "title": "Wolf of the Wall Street",
+        "director": "Martin Scorsese",
+        "img": "https://www.ixpap.com/images/2022/05/Wolf-Of-Wall-Street-Wallpaper-9.jpg",
+        "genre": "Crime/Comedy"
+    },
+    {
+        "title": "Pirates of the Caribbean:The Curse of the Black Pearl",
+        "director": "Gore Verbinski",
+        "img": "https://images6.alphacoders.com/811/811200.jpg",
+        "genre": "Adventure"
+    },
+  {
+    "title": "Interstellar",
+    "director": "Christopher Noalan",
+    "img": "https://images3.alphacoders.com/551/551456.jpg",
+    "genre": "Sci-Fi/Adventure"
+  }
+]

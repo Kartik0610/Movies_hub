@@ -1,0 +1,128 @@
+﻿@page
+@model MoviesAssignment2.Pages.MoviesListModel
+@{
+    string mainTitle = "Movie City";
+}
+
+<style>
+    /* Styling for the body */
+    body {
+        background-color: #141414;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+    }
+
+    /* Styling for the container holding the main title */
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        flex: 1; /
+    }
+
+    /* Styling for the main title */
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    /* Styling for the movie list container */
+    .movie-list {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling if needed */
+        position: fixed; /* Fix the position of the movie list at the bottom */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background-color: #141414;
+        z-index: 1; /* Ensure the movie list appears in front of other elements */
+        justify-content: center; 
+    }
+
+    /* Styling for each movie card */
+    .movie-card {
+        width: 200px;
+        margin: 0 10px; /* Equal margin on both sides of the movie cards */
+        transition: transform 0.3s ease; /* Smooth transition effect */
+    }
+
+    /* Styling for the movie card images */
+    .movie-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Styling for the movie info overlay */
+    .movie-info {
+        position: fixed; /* Fix the position of the movie info overlay */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+        display: none; /* Initially hide the movie info overlay */
+        justify-content: center;
+        align-items: center;
+        z-index: -1; /* Move the movie info overlay behind other elements */
+        opacity: -10; 
+        transition: opacity 0.3s ease; /* Smooth transition effect */
+    }
+
+    /* Styling for the movie card hover effect */
+    .movie-card:hover .movie-info {
+        display: flex; 
+        opacity: 1; /* Increase opacity on hover */
+    }
+
+    /* Styling for the enlarged image in the movie info overlay */
+    .movie-info img {
+        max-width: 80%; 
+        max-height: 80%; 
+        object-fit: contain; 
+        animation: zoomIn 0.3s ease; /* zoom-in animation */
+    }
+
+    /* Keyframes for the zoom-in animation */
+    @@keyframes zoomIn {
+        0% {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1); /* End with normal size */
+            opacity: 1; /* End with full opacity */
+        }
+    }
+</style>
+
+<!-- Main content container with the main title -->
+<div class="container">
+    <h1>@mainTitle</h1>
+</div>
+
+<!-- Container for the movie list -->
+<div class="movie-list">
+    @foreach (var movie in Model.Movies)
+    {
+        <!-- Individual movie card -->
+        <div class="movie-card">
+            <img src="@movie.Img" alt="@movie.Title"> <!-- Movie poster image -->
+            <!-- Movie info overlay -->
+            <div class="movie-info">
+                <img src="@movie.Img" alt="@movie.Title"> <!-- Enlarged movie poster image -->
+                <div>
+                    <h2>@movie.Title</h2> <!-- Movie title -->
+                    <p>Director: @movie.Director</p> <!-- Director name -->
+                    <p>Genre: @movie.Genre</p> <!-- Movie genre -->
+                </div>
+            </div>
+        </div>
+    }
+</div>
